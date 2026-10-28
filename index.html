@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="This is a sample HTML page">
+    <meta name="Keywords" content="HTML, Sample, Page">
+    <meta name="Author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 4.2: Dark and Light Mode Page template.</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+   <body>
+    
+    
+<header>
+    <div class="header-content">
+        <div>
+            <h1>Brent Council's CareReport</h1>
+            <p>Brent Council's Hospital Reporting System</p>
+        </div>
+
+        <button id="themeButton" type="button">
+            Dark Mode
+        </button>
+    </div>
+</header>
+
+
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="view-reports.html">View Reports</a></li>
+        <li><a href="submit-report.html">Submit Report</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <h2>Dashboard</h2>
+        <p>Welcome to Brent Council's Hospital Reporting System.</p>
+
+        <section id="summary">
+            <div class="card">
+                <h3>Total Reports</h3>
+                <p id="totalReports">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending Reports</h3>
+                <p id="pendingReports">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Completed Reports</h3>
+                <p id="completedReports">0</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Submit a Report</h2>
+
+            <form id="reportForm">
+                <label for="reportTitle">Report Title</label>
+                <input type="text" id="reportTitle" required>
+
+                <label for="department">Department</label>
+                <select id="department" required>
+                    <option value="">Select a department:</option>
+                    <option value="Emergency">Emergency</option>
+                    <option value="Maternity">Maternity</option>
+                    <option value="Outpatients">Outpatients</option>
+                    <option value="Administration">Administration</option>
+                </select>
+
+                <label for="reportDate">Report Date</label>
+                <input type="date" id="reportDate" required>
+
+                <label for="description">Description</label>
+                <textarea id="description" required></textarea>
+
+                <button type="submit">Submit Report</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Recent Reports</h2>
+
+            <input
+                type="text"
+                id="searchReports"
+                placeholder="Search reports..."
+            >
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Report ID</th>
+                        <th>Title</th>
+                        <th>Department</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="reportList">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+  
+     
+     
+     
+     
+
+
+
+
+  </body>
+  </html>
